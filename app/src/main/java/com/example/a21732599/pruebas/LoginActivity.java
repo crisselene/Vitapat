@@ -96,7 +96,7 @@ public class LoginActivity extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
                                 user = fba.getCurrentUser();
-                                Intent i = new Intent(LoginActivity.this, ActivityPrueba.class);
+                                Intent i = new Intent(LoginActivity.this, MainActivity.class);
                                 i.putExtra("USER", user.getEmail());
                                 startActivity(i);
                                 Toast.makeText(LoginActivity.this, getString(R.string.msj_logado),Toast.LENGTH_LONG).show();

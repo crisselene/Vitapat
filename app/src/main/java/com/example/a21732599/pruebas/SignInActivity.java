@@ -101,7 +101,7 @@ public class SignInActivity extends AppCompatActivity {
                                 user = fba.getCurrentUser();
                                 Toast.makeText(SignInActivity.this,
                                         getString(R.string.msj_registrado) + ": " +user.getEmail(), Toast.LENGTH_SHORT).show();
-                                Intent i = new Intent(SignInActivity.this, ActivityPrueba.class);
+                                Intent i = new Intent(SignInActivity.this, MainActivity.class);
                                 startActivity(i);
 
                             } else {
