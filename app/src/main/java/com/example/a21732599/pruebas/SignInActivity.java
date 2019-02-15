@@ -69,6 +69,28 @@ public class SignInActivity extends AppCompatActivity {
 
     }
 
+    private boolean validarDatos() {
+        boolean datosOK = true;
+        stremail = etEmail.getText().toString().trim();
+        strpwd = etPassword.getText().toString().trim();
+        strpwd2 = etPassword2.getText().toString().trim();
+        usuario = etUsuario.getText().toString().trim();
+
+        //validación:
+        if(stremail.isEmpty() || strpwd.isEmpty() || strpwd2.isEmpty() || usuario.isEmpty()) {
+            datosOK = false;
+
+        }
+        if(strpwd == strpwd2){
+            datosOK = false;
+        }else {
+
+        }
+
+
+        return datosOK;
+    }
+
     public void registrar(View v) {
         if(validarDatos()) {
             fba.createUserWithEmailAndPassword(stremail, strpwd)
@@ -79,6 +101,9 @@ public class SignInActivity extends AppCompatActivity {
                                 user = fba.getCurrentUser();
                                 Toast.makeText(SignInActivity.this,
                                         getString(R.string.msj_registrado) + ": " +user.getEmail(), Toast.LENGTH_SHORT).show();
+                                Intent i = new Intent(SignInActivity.this, ActivityPrueba.class);
+                                startActivity(i);
+
                             } else {
                                 Toast.makeText(SignInActivity.this, getString(R.string.msj_no_registrado), Toast.LENGTH_SHORT).show();
 
@@ -95,19 +120,5 @@ public class SignInActivity extends AppCompatActivity {
         startActivity(inte);
     }
 
-    private boolean validarDatos() {
-        boolean datosOK = true;
-        stremail = etEmail.getText().toString().trim();
-        strpwd = etPassword.getText().toString().trim();
 
-        //validación:
-        if(stremail.isEmpty() || strpwd.isEmpty() || strpwd2.isEmpty() || usuario.isEmpty()) {
-            datosOK = false;
-        }
-
-        if(strpwd!= strpwd2){
-            datosOK = false;
-        }
-        return datosOK;
-    }
 }

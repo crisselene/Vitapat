@@ -68,7 +68,7 @@
         android:imeActionId="6"
         android:imeActionLabel="@string/action_sign_in_short"
         android:imeOptions="actionUnspecified"
-        android:inputType="textPassword"
+        android:inputType="text"
         android:maxLines="1"
         android:paddingLeft="@dimen/magins"
         android:shadowColor="@color/white"
@@ -116,6 +116,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="0dp"
         android:background="@drawable/boton_crear_cuenta"
+        android:onClick="atras"
         android:text="@string/btn_atras"
         android:textColor="@android:color/white" />
 
@@ -127,7 +128,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="128dp"
         android:background="@drawable/boton_entrar"
-        android:onClick="acceder"
+        android:onClick="registrar"
         android:text="@string/btnRegistrar"
         android:textColor="@android:color/white" />
 

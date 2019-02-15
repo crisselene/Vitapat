@@ -20,7 +20,7 @@
     <string name="vitapat">Vitapat</string>
     <string name="tv_slogan">Cuidando nuestro planeta</string>
     <string name="msj_registrado">Accediendo...</string>
-    <string name="msj_no_registrado">El usuario no está registrado en el sistema</string>
+    <string name="msj_no_registrado">El usuario no válido</string>
     <string name="msj_logado">Accediendo...</string>
     <string name="msj_no_accede">El usuario no está registrado en el sistema</string>
     <string name="msj_no_data">Debe introducir el email y la contraseña</string>
