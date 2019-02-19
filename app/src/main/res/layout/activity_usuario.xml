@@ -31,9 +31,9 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
-                android:layout_marginStart="316dp"
-                android:layout_marginLeft="316dp"
-                android:layout_marginTop="152dp"
+                android:layout_marginStart="314dp"
+                android:layout_marginLeft="314dp"
+                android:layout_marginTop="129dp"
                 android:gravity="center"
                 android:text="@string/user_name" />
 
@@ -44,11 +44,47 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:layout_marginTop="39dp"
-                android:layout_marginEnd="143dp"
-                android:layout_marginRight="143dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="144dp"
+                android:layout_marginRight="144dp"
                 android:foregroundGravity="center_vertical|center_horizontal|center"
                 android:src="@drawable/userpicture" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="314dp"
+                android:layout_marginLeft="314dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/camera" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="61dp"
+                android:layout_marginRight="61dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/strella" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="194dp"
+                android:layout_marginLeft="194dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/comentarios" />
         </RelativeLayout>
     </RelativeLayout>
 
