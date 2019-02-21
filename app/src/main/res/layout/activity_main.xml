@@ -20,8 +20,8 @@
         <android.support.v7.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_alignStart="@+id/null"
-            android:layout_alignTop="@+id/null" />
+
+             />
     </RelativeLayout>
 
     <ImageView
@@ -42,6 +42,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
         android:layout_marginBottom="5dp"
+        android:onClick="abrirMapa"
         app:srcCompat="@drawable/place" />
 
     <ImageView

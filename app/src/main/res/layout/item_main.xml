@@ -6,32 +6,70 @@
     android:padding="@dimen/activity_horizontal_margin">
 
     <LinearLayout
-        android:layout_width="246dp"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="178dp"
         android:orientation="horizontal">
 
-        <ImageView
-            android:id="@+id/imagePaisaje"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
-            app:srcCompat="@drawable/atardecercorto" />
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="176dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imagePaisaje"
+                android:layout_width="163dp"
+                android:layout_height="117dp"
+                app:srcCompat="@drawable/atardecercorto" />
+
+            <TextView
+                android:id="@+id/tvNombrePaisaje"
+                android:layout_width="163dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Puente Guinea" />
+
+            <LinearLayout
+                android:layout_width="153dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvZona"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical|center"
+                    android:text="ZONA VERDE" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="41dp"
+                    android:layout_height="23dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/puntoverde" />
+            </LinearLayout>
+
+        </LinearLayout>
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="205dp"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="178dp"
+        android:gravity="top|center_horizontal"
         android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="169dp"
+            android:layout_height="174dp"
             android:orientation="vertical">
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/fotoPerfil"
-                android:layout_width="79dp"
-                android:layout_height="67dp"
+                android:layout_width="162dp"
+                android:layout_height="51dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
@@ -42,18 +80,22 @@
                 android:src="@drawable/userpicture" />
 
             <TextView
-                android:id="@+id/textView5"
-                android:layout_width="73dp"
-                android:layout_height="wrap_content"
+                android:id="@+id/tvNombreUser"
+                android:layout_width="159dp"
+                android:layout_height="38dp"
                 android:layout_weight="1"
-                android:text="TextView" />
-        </LinearLayout>
+                android:gravity="center_horizontal"
+                android:text="Carmen Peñas"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
-        <TextView
-            android:id="@+id/tvNombreUser"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+            <TextView
+                android:id="@+id/tvHaSubido"
+                android:layout_width="159dp"
+                android:layout_height="63dp"
+                android:gravity="top|center"
+                android:text="Ha subido una foto"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+        </LinearLayout>
 
     </LinearLayout>
 
