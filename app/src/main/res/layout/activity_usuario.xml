@@ -43,7 +43,7 @@
                 android:id="@+id/tvName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_above="@+id/btnFoto"
+                android:layout_above="@+id/btnEvent"
                 android:layout_below="@+id/circle_profile"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="15dp"
@@ -62,13 +62,13 @@
                 android:src="@drawable/userpicture" />
 
             <Button
-                android:id="@+id/btnFoto"
+                android:id="@+id/btnEvent"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginBottom="9dp"
-                android:background="@drawable/camera"
+                android:layout_marginBottom="11dp"
+                android:background="@drawable/event"
                 android:onClick="fotos" />
 
             <Button
@@ -85,7 +85,7 @@
                 android:onClick="comentarios" />
 
             <Button
-                android:id="@+id/btnFav"
+                android:id="@+id/btnEvent"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_alignParentEnd="true"
@@ -94,7 +94,7 @@
                 android:layout_marginEnd="60dp"
                 android:layout_marginRight="60dp"
                 android:layout_marginBottom="10dp"
-                android:background="@drawable/fav"
+                android:background="@drawable/camera"
                 android:onClick="favoritos" />
 
             <Button
@@ -158,9 +158,11 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_alignEnd="@+id/btnUser"
+        android:layout_alignRight="@+id/btnSettings"
         android:layout_alignParentTop="true"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="7dp"
+        android:layout_marginRight="37dp"
         app:srcCompat="@drawable/info" />
 
 </RelativeLayout>

@@ -22,7 +22,7 @@ public class ActivityUsuario extends AppCompatActivity {
 
     }
 
-    public void favoritos(View v) {
+    public void eventos(View v) {
 
     }
 }
