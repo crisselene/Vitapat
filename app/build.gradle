@@ -4,7 +4,7 @@ apply plugin: 'com.google.gms.google-services'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.example.a21732599.pruebas"
+        applicationId "com.vitapat.a21732599.pruebas"
         minSdkVersion 15
         targetSdkVersion 28
         versionCode 1

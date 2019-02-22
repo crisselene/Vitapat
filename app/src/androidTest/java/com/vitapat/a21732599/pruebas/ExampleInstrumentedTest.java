@@ -1,4 +1,4 @@
-package com.example.a21732599.pruebas;
+package com.vitapat.a21732599.pruebas;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

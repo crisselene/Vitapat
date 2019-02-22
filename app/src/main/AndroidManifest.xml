@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.a21732599.pruebas">
+    package="com.vitapat.a21732599.pruebas">
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
@@ -22,18 +22,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".LoginActivity"
+            android:name="com.vitapat.a21732599.pruebas.LoginActivity"
             android:label="@string/app_name" />
-        <activity android:name=".SplashActivity">
+        <activity android:name="com.vitapat.a21732599.pruebas.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ActivityUsuario" />
-        <activity android:name=".SignInActivity" />
-        <activity android:name=".MainActivity" />
+        <activity android:name="com.vitapat.a21732599.pruebas.ActivityUsuario" />
+        <activity android:name="com.vitapat.a21732599.pruebas.SignInActivity" />
+        <activity android:name="com.vitapat.a21732599.pruebas.MainActivity" />
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -48,7 +48,7 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MapsActivity"
+            android:name="com.vitapat.a21732599.pruebas.MapsActivity"
             android:label="Map"></activity>
     </application>
 
