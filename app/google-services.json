@@ -8,18 +8,18 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:877999851962:android:4a005a11d583e5f9",
+        "mobilesdk_app_id": "1:877999851962:android:d74fdeba984fb086",
         "android_client_info": {
-          "package_name": "com.example.a21732599.pruebas"
+          "package_name": "com.vitapat.a21732599.pruebas"
         }
       },
       "oauth_client": [
         {
-          "client_id": "877999851962-f1kilfifugd2tc5hssrikgo339nrftli.apps.googleusercontent.com",
+          "client_id": "877999851962-blq0vfmm1vbg15qqmecpb79vj4v975ko.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.a21732599.pruebas",
-            "certificate_hash": "647f4e0c3cebc1e5fb83a4f70cb64679f78e3944"
+            "package_name": "com.vitapat.a21732599.pruebas",
+            "certificate_hash": "1f98406d2da44fe1657aa89ec7edfb6ffb0c69df"
           }
         },
         {
