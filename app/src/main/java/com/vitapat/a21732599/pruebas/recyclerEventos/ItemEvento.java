@@ -7,20 +7,20 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class ItemEvento {
     //atributos diseño
-     ImageView imgLugar;
-     TextView tvLugar;
-     TextView tvNombreUser;
-    de.hdodenhof.circleimageview.CircleImageView fotoPerfil;
-    TextView tvHaOrganizadoUnEvento;
-    TextView tvDescripcion;
-    TextView tvEstadoLimpieza;
-    ImageView imgColorLimpieza;
+     int imgLugar;
+     String tvLugar;
+     String tvNombreUser;
+    int fotoPerfil;
+    String tvHaOrganizadoUnEvento;
+    String tvDescripcion;
+    String tvEstadoLimpieza;
+    int imgColorLimpieza;
 
     //contrsuctor
-    public ItemEvento(ImageView imgLugar, TextView tvLugar, TextView tvNombreUser,
-                      CircleImageView fotoPerfil, TextView tvHaOrganizadoUnEvento,
-                      TextView tvDescripcion, TextView tvEstadoLimpieza,
-                      ImageView imgColorLimpieza) {
+    public ItemEvento(int imgLugar, String tvLugar, String tvNombreUser,
+                      int fotoPerfil, String tvHaOrganizadoUnEvento,
+                      String tvDescripcion, String tvEstadoLimpieza,
+                      int imgColorLimpieza) {
         this.imgLugar = imgLugar;
         this.tvLugar = tvLugar;
         this.tvNombreUser = tvNombreUser;
@@ -33,35 +33,35 @@ public class ItemEvento {
 
     //getters
 
-    public ImageView getImgLugar() {
+    public int getImgLugar() {
         return imgLugar;
     }
 
-    public TextView getTvLugar() {
+    public String getTvLugar() {
         return tvLugar;
     }
 
-    public TextView getTvNombreUser() {
+    public String getTvNombreUser() {
         return tvNombreUser;
     }
 
-    public CircleImageView getFotoPerfil() {
+    public int getFotoPerfil() {
         return fotoPerfil;
     }
 
-    public TextView getTvHaOrganizadoUnEvento() {
+    public String getTvHaOrganizadoUnEvento() {
         return tvHaOrganizadoUnEvento;
     }
 
-    public TextView getTvDescripcion() {
+    public String getTvDescripcion() {
         return tvDescripcion;
     }
 
-    public TextView getTvEstadoLimpieza() {
+    public String getTvEstadoLimpieza() {
         return tvEstadoLimpieza;
     }
 
-    public ImageView getImgColorLimpieza() {
+    public int getImgColorLimpieza() {
         return imgColorLimpieza;
     }
 }
