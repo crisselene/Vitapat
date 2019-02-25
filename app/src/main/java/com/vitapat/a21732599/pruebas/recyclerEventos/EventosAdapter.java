@@ -3,12 +3,29 @@ package com.vitapat.a21732599.pruebas.recyclerEventos;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.vitapat.a21732599.pruebas.R;
 
 public class EventosAdapter extends RecyclerView.Adapter {
+
+    @NonNull
+    @Override
+    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+        return null;
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder viewHolder, int i) {
+
+    }
+
+    @Override
+    public int getItemCount() {
+        return 0;
+    }
 
     public static class MiViewHolder extends RecyclerView.ViewHolder {
         ImageView imgLugar;
@@ -24,6 +41,7 @@ public class EventosAdapter extends RecyclerView.Adapter {
         public MiViewHolder(View itemView) {
             super(itemView);
 
-            imgLugar = (ImageView) itemView.findViewById(R.id.)
+
         }
     }
+}
