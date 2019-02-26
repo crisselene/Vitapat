@@ -22,18 +22,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.vitapat.a21732599.pruebas.LoginActivity"
+            android:name=".LoginActivity"
             android:label="@string/app_name" />
-        <activity android:name="com.vitapat.a21732599.pruebas.SplashActivity">
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.vitapat.a21732599.pruebas.ActivityUsuario" />
-        <activity android:name="com.vitapat.a21732599.pruebas.SignInActivity" />
-        <activity android:name="com.vitapat.a21732599.pruebas.MainActivity" />
+        <activity android:name=".ActivityUsuario" />
+        <activity android:name=".SignInActivity" />
+        <activity android:name=".MainActivity" />
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -48,8 +48,9 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name="com.vitapat.a21732599.pruebas.MapsActivity"
-            android:label="Map"></activity>
+            android:name=".MapsActivity"
+            android:label="Map" />
+        <activity android:name=".EditActivity"></activity>
     </application>
 
 </manifest>

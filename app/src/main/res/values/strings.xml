@@ -32,5 +32,7 @@
     <string name="btnRegistrar">Registrar</string>
     <string name="btn_atras">ATRÁS</string>
     <string name="user_name">name</string>
+    <string name="editar">Editar perfil</string>
+    <string name="apagar">Cerrar sesión</string>
 
 </resources>
