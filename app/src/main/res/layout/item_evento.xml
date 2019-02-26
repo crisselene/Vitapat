@@ -2,108 +2,124 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
     android:padding="@dimen/activity_horizontal_margin">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="178dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="176dp"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/imagePaisaje"
-                android:layout_width="163dp"
-                android:layout_height="117dp"
-                app:srcCompat="@drawable/atardecercorto" />
-
-            <TextView
-                android:id="@+id/tvNombrePaisaje"
-                android:layout_width="163dp"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:text="Puente Guinea" />
+            android:layout_width="wrap_content"
+            android:layout_height="178dp"
+            android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="153dp"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/tvEstado"
-                    android:layout_width="110dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="right|center_vertical|center"
-                    android:text="ZONA VERDE" />
+                android:layout_width="match_parent"
+                android:layout_height="176dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/imgColor"
-                    android:layout_width="41dp"
-                    android:layout_height="23dp"
-                    android:layout_gravity="left|center_vertical"
+                    android:id="@+id/imagePaisaje"
+                    android:layout_width="163dp"
+                    android:layout_height="117dp"
+                    app:srcCompat="@drawable/atardecercorto" />
+
+                <TextView
+                    android:id="@+id/tvNombrePaisaje"
+                    android:layout_width="163dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Puente Guinea" />
+
+                <LinearLayout
+                    android:layout_width="153dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvEstado"
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical|center"
+                        android:text="ZONA VERDE" />
+
+                    <ImageView
+                        android:id="@+id/imgColor"
+                        android:layout_width="41dp"
+                        android:layout_height="23dp"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/puntoverde" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="178dp"
+            android:gravity="top|center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="174dp"
+                android:orientation="vertical"
+                android:paddingLeft="16dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/fotoPerfil"
+                    android:layout_width="162dp"
+                    android:layout_height="51dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="39dp"
+                    android:layout_marginEnd="143dp"
+                    android:layout_marginRight="143dp"
+                    android:foregroundGravity="center"
+                    android:src="@drawable/userpicture" />
+
+                <TextView
+                    android:id="@+id/tvNombreUser"
+                    android:layout_width="159dp"
+                    android:layout_height="38dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/puntoverde" />
+                    android:gravity="center_horizontal"
+                    android:text="Carmen Peñas"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Tooltip" />
+
+                <TextView
+                    android:id="@+id/tvHaSubido"
+                    android:layout_width="159dp"
+                    android:layout_height="36dp"
+                    android:gravity="top|center"
+                    android:text="Ha organizado un evento"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                <TextView
+                    android:id="@+id/tvDescripcion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="31dp"
+                    android:text="Picnic al lado del puente!"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
             </LinearLayout>
 
         </LinearLayout>
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="178dp"
-        android:gravity="top|center_horizontal"
-        android:orientation="horizontal">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="174dp"
-            android:orientation="vertical">
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/fotoPerfil"
-                android:layout_width="162dp"
-                android:layout_height="51dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="39dp"
-                android:layout_marginEnd="143dp"
-                android:layout_marginRight="143dp"
-                android:foregroundGravity="center"
-                android:src="@drawable/userpicture" />
-
-            <TextView
-                android:id="@+id/tvNombreUser"
-                android:layout_width="159dp"
-                android:layout_height="38dp"
-                android:layout_weight="1"
-                android:gravity="center_horizontal"
-                android:text="Carmen Peñas"
-                android:textAppearance="@style/TextAppearance.AppCompat.Tooltip" />
-
-            <TextView
-                android:id="@+id/tvHaSubido"
-                android:layout_width="159dp"
-                android:layout_height="36dp"
-                android:gravity="top|center"
-                android:text="Ha organizado un evento"
-                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
-
-            <TextView
-                android:id="@+id/tvDescripcion"
-                android:layout_width="wrap_content"
-                android:layout_height="31dp"
-                android:text="Picnic al lado del puente!"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
-        </LinearLayout>
-
-    </LinearLayout>
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingTop="16dp"
+        app:srcCompat="@drawable/linea" />
 
 </LinearLayout>

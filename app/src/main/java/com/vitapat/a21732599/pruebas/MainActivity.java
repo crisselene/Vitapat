@@ -36,14 +36,18 @@ public class MainActivity extends AppCompatActivity {
         miRecyclerView.setLayoutManager(miLayoutManager);
 
         miAdapter = new EventosAdapter(datos);
-        //miAdapter.setOnClickListener(new View.OnClickListener() {
-           /* @Override
+        miAdapter.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View v) {
+                String lugar = (String) ((EventosAdapter.MiViewHolder)miRecyclerView.getChildViewHolder(v)).getTvLugar().getText();
                 String msg = "Seleccionada la opción " + miRecyclerView.indexOfChild(v) + " con el valor "
-                        + ((EventosAdapter.MiViewHolder)miRecyclerView.getChildViewHolder(v)).().getText();
+                        + lugar;
                 Toast.makeText(MainActivity.this, msg, Toast.LENGTH_SHORT).show();
-            }*/
-        //});
+                Intent i = new Intent(MainActivity.this, ActivityDescEvento.class);
+                i.putExtra("LUGAR",lugar);
+                startActivity(i);
+            }
+        });
 
         miRecyclerView.setAdapter(miAdapter);
     }
