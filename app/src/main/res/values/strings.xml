@@ -32,5 +32,6 @@
     <string name="btnRegistrar">Registrar</string>
     <string name="btn_atras">ATRÁS</string>
     <string name="user_name">name</string>
+    <string name="title_activity_maps">Map</string>
 
 </resources>

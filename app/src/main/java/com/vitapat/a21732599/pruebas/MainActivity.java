@@ -1,11 +1,13 @@
 package com.vitapat.a21732599.pruebas;
 
 import android.content.Intent;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -17,6 +19,12 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+    ImageView btnGPS;
+    ImageView btnUsuario;
+    ImageView btnInic;
+    ImageView btnAjuste;
+    ImageView btnInf;
+    FloatingActionButton flotando;
     private RecyclerView miRecyclerView;
     private LinearLayoutManager miLayoutManager;
     private EventosAdapter miAdapter;
@@ -27,6 +35,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        btnGPS = findViewById(R.id.btnMapAna);
+        btnUsuario = findViewById(R.id.btnUserAna);
+        btnInic = findViewById(R.id.btnInicio);
+        btnAjuste = findViewById(R.id.btnSettings);
+        btnInf = findViewById(R.id.btnInfo);
+        flotando= findViewById(R.id.flAnadir);
         datos = (new DatosPrueba()).getLista();
         miRecyclerView = (RecyclerView)findViewById(R.id.rview);
 
@@ -61,5 +75,13 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(MainActivity.this, ActivityUsuario.class);
         startActivity(i);
     }
+
+    public void anadirRapido(View v){
+        Intent i = new Intent(MainActivity.this, AnadirEventoActivity.class);
+        startActivity(i);
+    }
+
+
+
 
 }
