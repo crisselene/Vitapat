@@ -36,5 +36,7 @@
     <string name="et_titulo">Titulo</string>
     <string name="et_descripcion">Descripcion</string>
     <string name="btn_post">SUBIR</string>
+    <string name="editar">Editar perfil</string>
+    <string name="apagar">Cerrar sesión</string>
 
 </resources>

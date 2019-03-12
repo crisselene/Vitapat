@@ -17,23 +17,31 @@
         android:background="@color/white">
 
         <RelativeLayout
+            android:id="@+id/rlRV"
             android:layout_width="match_parent"
-            android:layout_height="209dp"
-            android:layout_alignStart="@+id/circle_profile"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="-142dp"
+            android:layout_height="265dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
             android:background="@drawable/geometric">
 
             <TextView
                 android:id="@+id/tvName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="313dp"
-                android:layout_marginLeft="313dp"
-                android:layout_marginTop="144dp"
+                android:layout_below="@+id/circle_profile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="13dp"
                 android:gravity="center"
                 android:text="@string/user_name" />
 
@@ -42,14 +50,65 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="39dp"
-                android:layout_marginEnd="143dp"
-                android:layout_marginRight="143dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
                 android:foregroundGravity="center_vertical|center_horizontal|center"
                 android:src="@drawable/userpicture" />
+
+            <Button
+                android:id="@+id/btnComment"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/circle_profile"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="43dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/comment" />
+
+            <Button
+                android:id="@+id/btnEvent"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/circle_profile"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="43dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/event"
+                android:gravity="center_vertical|center_horizontal|center" />
+
+            <Button
+                android:id="@+id/btnCamara"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/circle_profile"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="43dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/camera" />
+
+            <Button
+                android:id="@+id/btnPower"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="22dp"
+                android:layout_marginRight="22dp"
+                android:background="@drawable/apagar" />
+
         </RelativeLayout>
+
     </RelativeLayout>
 
     <ImageView

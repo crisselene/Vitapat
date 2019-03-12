@@ -49,6 +49,7 @@
 
         <activity android:name=".MapsActivity" />
         <activity android:name=".AnadirEventoActivity"></activity>
+        <activity android:name=".EditActivity"></activity>
     </application>
 
 </manifest>
