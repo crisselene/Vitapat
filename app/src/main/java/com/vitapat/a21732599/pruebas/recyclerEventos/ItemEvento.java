@@ -1,9 +1,6 @@
 package com.vitapat.a21732599.pruebas.recyclerEventos;
 
 import android.widget.ImageView;
-import android.widget.TextView;
-
-import de.hdodenhof.circleimageview.CircleImageView;
 
 public class ItemEvento {
     //atributos diseño
