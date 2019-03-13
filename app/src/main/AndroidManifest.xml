@@ -37,16 +37,16 @@
         <activity
             android:name="com.vitapat.a21732599.pruebas.LoginActivity"
             android:label="@string/app_name" />
-        <activity android:name=".SplashActivity">
+        <activity android:name="com.vitapat.a21732599.pruebas.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ActivityUsuario" />
-        <activity android:name=".SignInActivity" />
-        <activity android:name=".MainActivity" />
+        <activity android:name="com.vitapat.a21732599.pruebas.ActivityUsuario" />
+        <activity android:name="com.vitapat.a21732599.pruebas.SignInActivity" />
+        <activity android:name="com.vitapat.a21732599.pruebas.MainActivity" />
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.

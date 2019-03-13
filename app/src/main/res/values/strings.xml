@@ -32,6 +32,8 @@
     <string name="btnRegistrar">Registrar</string>
     <string name="btn_atras">ATRÁS</string>
     <string name="user_name">name</string>
+    <string name="editar">Editar perfil</string>
+    <string name="apagar">Cerrar sesión</string>
     <string name="title_activity_maps">Map</string>
     <string name="et_titulo">Titulo</string>
     <string name="et_descripcion">Descripcion</string>
