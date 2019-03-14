@@ -43,7 +43,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
         android:layout_marginBottom="5dp"
-        android:onClick="abrirMapa"
+        android:onClick="abrirMap"
         app:srcCompat="@drawable/place" />
 
     <ImageView

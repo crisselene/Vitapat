@@ -13,10 +13,12 @@
          location permissions for the 'MyLocation' functionality. 
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <permission
         android:name="your.package.name.permission.MAPS_RECEIVE"
         android:protectionLevel="signature" />
-    <uses-permission android:name="your.package.name.permission.MAPS_RECEIVE"/>
+
+    <uses-permission android:name="your.package.name.permission.MAPS_RECEIVE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -26,7 +28,8 @@
 
     <uses-feature
         android:glEsVersion="0x00020000"
-        android:required="true"/>
+        android:required="true" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher_foreground"
@@ -35,18 +38,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.vitapat.a21732599.pruebas.LoginActivity"
+            android:name=".LoginActivity"
             android:label="@string/app_name" />
-        <activity android:name="com.vitapat.a21732599.pruebas.SplashActivity">
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.vitapat.a21732599.pruebas.ActivityUsuario" />
-        <activity android:name="com.vitapat.a21732599.pruebas.SignInActivity" />
-        <activity android:name="com.vitapat.a21732599.pruebas.MainActivity" />
+        <activity android:name=".ActivityUsuario" />
+        <activity android:name=".SignInActivity" />
+        <activity android:name=".ActivityDescEvento" />
+        <activity android:name=".MainActivity" />
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -61,7 +65,7 @@
             android:value="@string/google_maps_key" />
 
         <activity android:name=".MapsActivity" />
-        <activity android:name=".AnadirEventoActivity"></activity>
+        <activity android:name=".ActivityAnadirEvento"></activity>
     </application>
 
 </manifest>

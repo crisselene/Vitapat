@@ -1,9 +1,6 @@
 package com.vitapat.a21732599.pruebas;
 
 import android.content.Intent;
-import android.media.Image;
-import android.net.Uri;
-import android.os.Parcelable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,7 +10,6 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.vitapat.a21732599.pruebas.pojo.Evento;
 import com.vitapat.a21732599.pruebas.recyclerEventos.DatosPrueba;
 import com.vitapat.a21732599.pruebas.recyclerEventos.EventosAdapter;
 import com.vitapat.a21732599.pruebas.recyclerEventos.ItemEvento;
@@ -27,13 +23,12 @@ public class MainActivity extends AppCompatActivity {
     ImageView btnInic;
     ImageView btnAjuste;
     ImageView btnInf;
-    String eventoTitulo;
+    ImageView colorN;
     FloatingActionButton flotando;
     private RecyclerView miRecyclerView;
     private LinearLayoutManager miLayoutManager;
     private EventosAdapter miAdapter;
     private ArrayList<ItemEvento> datos;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,9 +41,8 @@ public class MainActivity extends AppCompatActivity {
         btnAjuste = findViewById(R.id.btnSettings);
         btnInf = findViewById(R.id.btnInfo);
         flotando= findViewById(R.id.flAnadir);
-
+        datos = (new DatosPrueba()).getLista();
         miRecyclerView = (RecyclerView)findViewById(R.id.rview);
-
 
         miRecyclerView.setHasFixedSize(true);
 
@@ -60,11 +54,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String lugar = (String) ((EventosAdapter.MiViewHolder)miRecyclerView.getChildViewHolder(v)).getTvLugar().getText();
+                String titulo = (String) ((EventosAdapter.MiViewHolder)miRecyclerView.getChildViewHolder(v)).getTvDescripcion().getText();
+                String nombreUser = (String) ((EventosAdapter.MiViewHolder)miRecyclerView.getChildViewHolder(v)).getTvNombreUser().getText();
+                String color = (String) ((EventosAdapter.MiViewHolder)miRecyclerView.getChildViewHolder(v)).getTvEstadoLimpieza().getText();
+                colorN = ((EventosAdapter.MiViewHolder)miRecyclerView.getChildViewHolder(v)).getImgColorLimpieza();
                 String msg = "Seleccionada la opción " + miRecyclerView.indexOfChild(v) + " con el valor "
                         + lugar;
-                Toast.makeText(MainActivity.this, msg, Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(MainActivity.this, ActivityDescEvento.class);
                 i.putExtra("LUGAR",lugar);
+                i.putExtra("NOMBRE USER", nombreUser);
+                i.putExtra("TITULO",titulo);
+                i.putExtra("COLOR",color);
                 startActivity(i);
             }
         });
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         miRecyclerView.setAdapter(miAdapter);
     }
 
-    public void abrirMapa(View v){
+    public void abrirMap(View v){
         Intent i = new Intent(MainActivity.this, MapsActivity.class);
         startActivity(i);
     }
@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void anadirRapido(View v){
-        Intent i = new Intent(MainActivity.this, AnadirEventoActivity.class);
+        Intent i = new Intent(MainActivity.this, ActivityAnadirEvento.class);
         startActivity(i);
     }
 

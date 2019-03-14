@@ -12,7 +12,8 @@
         android:layout_height="match_parent"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="41dp"
         android:layout_marginBottom="50dp"
         android:background="@color/white">
 
@@ -41,9 +42,11 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/circle_profile"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="13dp"
+                android:layout_marginTop="6dp"
                 android:gravity="center"
-                android:text="@string/user_name" />
+                android:text="@string/user_name"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/circle_profile"
@@ -56,20 +59,6 @@
                 android:src="@drawable/userpicture" />
 
             <Button
-                android:id="@+id/btnComment"
-                android:layout_width="30dp"
-                android:layout_height="35dp"
-                android:layout_below="@+id/circle_profile"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="60dp"
-                android:layout_marginLeft="60dp"
-                android:layout_marginTop="43dp"
-                android:layout_marginBottom="12dp"
-                android:background="@drawable/comment" />
-
-            <Button
                 android:id="@+id/btnEvent"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
@@ -80,20 +69,6 @@
                 android:layout_marginBottom="12dp"
                 android:background="@drawable/event"
                 android:gravity="center_vertical|center_horizontal|center" />
-
-            <Button
-                android:id="@+id/btnCamara"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_below="@+id/circle_profile"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginTop="43dp"
-                android:layout_marginEnd="60dp"
-                android:layout_marginRight="60dp"
-                android:layout_marginBottom="12dp"
-                android:background="@drawable/camera" />
 
             <Button
                 android:id="@+id/btnPower"
@@ -120,6 +95,20 @@
         android:onClick="goMain"
         app:srcCompat="@drawable/logo" />
 
+    <TextView
+        android:id="@+id/tvMiseventos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="275dp"
+        android:gravity="center"
+        android:text="Mis eventos"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
     <ImageView
         android:id="@+id/btnMapAna"
         android:layout_width="40dp"
@@ -130,6 +119,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
         android:layout_marginBottom="5dp"
+        android:onClick="goGps"
         app:srcCompat="@drawable/place" />
 
     <ImageView
