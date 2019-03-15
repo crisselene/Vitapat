@@ -42,6 +42,7 @@
                     android:ems="10"
                     android:hint="@string/et_titulo"
                     android:inputType="textPersonName"
+                    android:textColorLink="@color/design_default_color_primary_dark"
                     android:textStyle="bold" />
 
                 <EditText
@@ -50,7 +51,8 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:hint="Lugar"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColorLink="@color/design_default_color_primary_dark" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -63,7 +65,8 @@
                         android:layout_height="wrap_content"
                         android:ems="10"
                         android:hint="Fecha"
-                        android:inputType="date" />
+                        android:inputType="date"
+                        android:textColorLink="@color/design_default_color_primary_dark" />
 
                     <EditText
                         android:id="@+id/etHora"
@@ -71,7 +74,8 @@
                         android:layout_height="wrap_content"
                         android:ems="10"
                         android:hint="Hora"
-                        android:inputType="time" />
+                        android:inputType="time"
+                        android:textColorLink="@color/design_default_color_primary_dark" />
                 </LinearLayout>
 
                 <android.support.design.widget.TextInputLayout
@@ -146,7 +150,7 @@
             android:clickable="true"
             android:onClick="subirImagen"
             app:backgroundTint="@color/btn_flotante"
-            app:srcCompat="@drawable/camera" />
+            app:srcCompat="@drawable/camaraplusss" />
 
         <TextView
             android:id="@+id/colordeZona"
@@ -160,11 +164,11 @@
             android:layout_marginBottom="120dp"
             android:gravity="center_horizontal|center"
             android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button"
+            android:textColorLink="@color/design_default_color_primary_dark"
             android:textSize="24sp" />
 
         <Button
             android:id="@+id/btnPostear"
-            android:onClick="subirEvento"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -172,7 +176,10 @@
             android:layout_marginStart="0dp"
             android:background="@color/btn_flotante"
             android:foregroundGravity="bottom"
-            android:text="@string/btn_post" />
+            android:onClick="subirEvento"
+            android:text="@string/btn_post"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="18sp" />
 
     </RelativeLayout>
 
@@ -219,6 +226,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="22dp"
+        android:onClick="goSettings"
         app:srcCompat="@drawable/settings" />
 
     <ImageView

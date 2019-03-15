@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.vitapat.a21732599.pruebas">
+    package="com.vitapat.a21732599.pruebas"
+    android:versionCode="1"
+    android:versionName="1.0">
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
@@ -65,7 +67,8 @@
             android:value="@string/google_maps_key" />
 
         <activity android:name=".MapsActivity" />
-        <activity android:name=".ActivityAnadirEvento"></activity>
+        <activity android:name=".ActivityAnadirEvento" />
+        <activity android:name=".SettingsActivity"></activity>
     </application>
 
 </manifest>

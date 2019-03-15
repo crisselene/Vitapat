@@ -13,7 +13,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.PopupMenu;
+import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.vitapat.a21732599.pruebas.recyclerEventos.DatosPruebaUser;
 import com.vitapat.a21732599.pruebas.recyclerEventos.EventosAdapter;
 import com.vitapat.a21732599.pruebas.recyclerEventos.ItemEvento;
@@ -27,6 +30,8 @@ public class ActivityUsuario extends AppCompatActivity {
     private LinearLayoutManager miLayoutManager;
     private EventosAdapter miAdapter;
     private ArrayList<ItemEvento> datos;
+    TextView name;
+    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
 
     @Override
@@ -47,6 +52,15 @@ public class ActivityUsuario extends AppCompatActivity {
         miRecyclerView.setAdapter(miAdapter);
 
         btnPower = findViewById(R.id.btnPower);
+
+        name = findViewById(R.id.tvName);
+
+        //NOMBRE DE USUARIO FIREBASE
+      //  String nameS = name.getText().toString();
+
+       // nameS = user.getDisplayName();
+
+       // name.setText(nameS);
 
        btnPower.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -90,6 +104,11 @@ public class ActivityUsuario extends AppCompatActivity {
 
     public void goGps(View v){
         Intent i = new Intent(ActivityUsuario.this, MapsActivity.class);
+        startActivity(i);
+    }
+
+    public void goSettings(View v){
+        Intent i = new Intent(ActivityUsuario.this, SettingsActivity.class);
         startActivity(i);
     }
 }

@@ -98,4 +98,9 @@ public class ActivityAnadirEvento extends AppCompatActivity {
         Intent i = new Intent(ActivityAnadirEvento.this, MainActivity.class);
         startActivity(i);
     }
+
+    public void goSettings(View v){
+        Intent i = new Intent(ActivityAnadirEvento.this, SettingsActivity.class);
+        startActivity(i);
+    }
 }

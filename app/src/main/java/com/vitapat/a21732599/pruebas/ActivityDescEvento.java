@@ -1,6 +1,7 @@
 package com.vitapat.a21732599.pruebas;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
@@ -45,6 +46,14 @@ public class ActivityDescEvento extends AppCompatActivity {
         fecha = findViewById(R.id.tvFecha);
         contacto = findViewById(R.id.tvContacto);
         miRecyclerView = (RecyclerView)findViewById(R.id.rview);
+
+        Typeface faceFuente=Typeface.createFromAsset(getAssets(),"Rubik-Regular.ttf");
+        tvColor.setTypeface(faceFuente);
+        tvLugar.setTypeface(faceFuente);
+        tvTitulo.setTypeface(faceFuente);
+        tvUser.setTypeface(faceFuente);
+        descri.setTypeface(faceFuente);
+
 
         cargarDatos();
 
@@ -110,6 +119,11 @@ public class ActivityDescEvento extends AppCompatActivity {
 
     public void goMain(View v) {
         Intent i = new Intent(ActivityDescEvento.this, MainActivity.class);
+        startActivity(i);
+    }
+
+    public void goSettings(View v){
+        Intent i = new Intent(ActivityDescEvento.this, SettingsActivity.class);
         startActivity(i);
     }
 

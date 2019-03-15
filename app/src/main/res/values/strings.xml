@@ -31,12 +31,14 @@
     <string name="et_Confirmar">Confirmar contraseña</string>
     <string name="btnRegistrar">Registrar</string>
     <string name="btn_atras">ATRÁS</string>
-    <string name="user_name">My user name</string>
+    <string name="user_name">Maria Antonia</string>
     <string name="editar">Editar perfil</string>
     <string name="apagar">Cerrar sesión</string>
     <string name="title_activity_maps">Map</string>
     <string name="et_titulo">Titulo</string>
     <string name="et_descripcion">Descripcion</string>
     <string name="btn_post">SUBIR</string>
+    <string name="aceptar">aceptar</string>
+    <string name="cambiar_user">cambiar nombre usuario</string>
 
 </resources>
